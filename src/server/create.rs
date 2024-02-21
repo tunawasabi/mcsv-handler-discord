@@ -1,8 +1,8 @@
 #[cfg(target_os = "windows")]
-pub use self::windows::command_new;
+pub use self::windows::*;
 
 #[cfg(not(target_os = "windows"))]
-pub use self::not_windows::command_new;
+pub use self::not_windows::*;
 
 #[cfg(target_os = "windows")]
 mod windows {
